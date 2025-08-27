@@ -1,6 +1,6 @@
 # Saliency-Guided Training for Fingerprint Presentation Attack Detection
 
-Official GitHub repository for the paper: Samuel Webster and Adam Czajka, "Saliency-Guided Training for Fingerprint Presentation Attack Detection," IEEE/IAPR International Joint Conference on Biometrics, Osaka, Japan, September 8-11, 2025 **([ArXiv](https://www.arxiv.org/abs/2505.02176) | [IEEEXplore](https://ieeexplore.ieee.org/)**
+Official GitHub repository for the paper: Samuel Webster and Adam Czajka, "Saliency-Guided Training for Fingerprint Presentation Attack Detection," IEEE/IAPR International Joint Conference on Biometrics, Osaka, Japan, September 8-11, 2025 **([ArXiv](https://www.arxiv.org/abs/2505.02176) | [IEEEXplore](https://ieeexplore.ieee.org/))**
 
 ![Paper teaser graphic](teaser.jpg)
 
