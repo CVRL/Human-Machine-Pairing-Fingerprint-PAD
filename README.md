@@ -45,11 +45,11 @@ Across all experiments, we train 720 individual models with varying configuratio
 
 If you find this work useful in your research, please cite the following paper:
 ```
-@inproceedings{mitcheff2024privacysafeirispresentationattack,
-      title={Privacy-Safe Iris Presentation Attack Detection}, 
-      author={Mahsa Mitcheff, Patrick Tinsley and Adam Czajka},
-      year={2024},
-      booktitle={IEEE International Joint Conference on Biometrics},
+@inproceedings{websterIJCB2025,
+      title={Saliency-Guided Training for Fingerprint Presentation Attack Detection}, 
+      author={Samuel Webster and Adam Czajka},
+      year={2025},
+      booktitle={IEEE/IAPR International Joint Conference on Biometrics, Osaka, Japan, September 8-11, 2025},
 }
 ```
 
