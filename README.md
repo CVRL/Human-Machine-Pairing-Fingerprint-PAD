@@ -4,6 +4,8 @@ Official GitHub repository for the paper: Samuel Webster and Adam Czajka, "Salie
 
 ![Paper teaser graphic](teaser.jpg)
 
+We collected visual salient annotations and text descriptions, supporting decisions of humans detecting fake fingerprints, and used these salient features in saliency-guided model training paradigm to offer an effective fingerprint presentation attack detection method.
+
 ## Table of contents
 * [Abstract](#abstract)
 * [Datasets](#datasets)
@@ -13,6 +15,8 @@ Official GitHub repository for the paper: Samuel Webster and Adam Czajka, "Salie
 
 <a name="abstract"/></a>
 ## Abstract
+
+Saliency-guided training, which directs model learning to important regions of images, has demonstrated gen- eralization improvements across various biometric presentation attack detection (PAD) tasks. This paper presents its first application to fingerprint PAD. We conducted a 50-participant study to create a dataset of 800 human-annotated fingerprint perceptually-important maps, explored alongside algorithmically-generated "pseudosaliency," including minutiae-based, image quality-based, and autoencoder-based saliency maps. Evaluating on the 2021 Fingerprint Liveness Detection Competition testing set, we explore various configurations within five distinct training scenarios to assess the impact of saliency-guided training on accuracy and generalization. Our findings demonstrate the effectiveness of saliency-guided training for fingerprint PAD in both limited and large data contexts, and we present a configuration capable of earning the first place on the LivDet-2021 benchmark. Our results highlight saliency-guided training’s promise for increased model generalization capabilities, its effectiveness when data is limited, and its potential to scale to larger datasets in fingerprint PAD. All collected saliency data and trained models are released with the paper to support reproducible research.
 
 <a name="datasets"/></a>
 ## Datasets
