@@ -38,7 +38,7 @@ Instructions on how to request a copy of the synthetic iris dataset used in this
 <a name="weights"/></a>
 ## Trained Fingerprint PAD models
 
-Across all experiments, we train 720 individual models with varying configurations based on our five outlined scenarios. The models are available in this [box folder]().
+Across all experiments, we train 720 individual models with varying configurations based on our five outlined scenarios. The models are available in this [box folder](https://notredame.box.com/s/rvrvz8d5eeuldeeffv7f8z6jdi3jala4).
 
 <a name="citation"/></a>
 ### Citation
