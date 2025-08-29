@@ -47,11 +47,11 @@ The models are available in this [Box folder](https://notredame.box.com/s/rvrvz8
 
 Models are divided into subdirectories that identify the scenario in which they were trained. Scenarios that explore saliency-guided loss are further divided into subdirectories, following the format `{scenario}/{saliency type}/{saliency granularity/`. All model weight filenames (`.pth` files) contain the necessary information to identify how they were trained respective to their training scenario.
 
-`s1-large-xent/`: Models are trained on a large data availability context using cross entropy loss only. Model filenames are formatted as `s1_{CNN architecture}_{# indep. run}.pth`.
-`s2-limited-xent/`: Models are trained on a limited data availability context using cross entropy loss only. Model filenames are formatted as `s2_{CNN architecture}_{# indep. run}.pth`.
-` s3-limited-cyborg/`: Models are trained on a limited data availability context using loss-based saliency guidance and a variety of saliency types. Model filenames are formatted as `s3_{saliency type}-{saliency granularity}_{CNN architecture}_alpha-{alpha value}_{# indep. run}.pth`.
- `s4-limited-blurring/`: Models are trained on a limited data availability context using blur-based saliency guidance and a variety of saliency types. Model filenames are formatted as `s4_{saliency type}-{saliency granularity}_{CNN architecture}_{# indep. run}.pth`.
-  `s5-large-cyborg/`: Models are trained on a large data availability context using loss-based saliency guidance and a variety of saliency types. Model filenames are formatted as `s5_{saliency type}-{saliency granularity}_{CNN architecture}_alpha-{alpha value}_{# indep. run}.pth`.
+- `s1-large-xent/`: Models are trained on a large data availability context using cross entropy loss only. Model filenames are formatted as `s1_{CNN architecture}_{# indep. run}.pth`.
+- `s2-limited-xent/`: Models are trained on a limited data availability context using cross entropy loss only. Model filenames are formatted as `s2_{CNN architecture}_{# indep. run}.pth`.
+- ` s3-limited-cyborg/`: Models are trained on a limited data availability context using loss-based saliency guidance and a variety of saliency types. Model filenames are formatted as `s3_{saliency type}-{saliency granularity}_{CNN architecture}_alpha-{alpha value}_{# indep. run}.pth`.
+- `s4-limited-blurring/`: Models are trained on a limited data availability context using blur-based saliency guidance and a variety of saliency types. Model filenames are formatted as `s4_{saliency type}-{saliency granularity}_{CNN architecture}_{# indep. run}.pth`.
+- `s5-large-cyborg/`: Models are trained on a large data availability context using loss-based saliency guidance and a variety of saliency types. Model filenames are formatted as `s5_{saliency type}-{saliency granularity}_{CNN architecture}_alpha-{alpha value}_{# indep. run}.pth`.
 
 <a name="citation"/></a>
 ### Citation
