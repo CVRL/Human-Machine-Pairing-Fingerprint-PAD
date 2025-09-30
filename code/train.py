@@ -187,23 +187,18 @@ for epoch in range(args.nEpochs):
                         print("INVALID ARCHITECTURE:",args.network)
                         sys.exit()
 
-                    # features = activation['features']
                     bz, nc, h, w = features.shape
 
                     beforeDot =  features.reshape((bz, nc, h*w))
                     cams = []
                     for ids,bd in enumerate(beforeDot):
                         weight = params[cls[ids]]
-                        # weight = params[pred[ids]]
                         cam = torch.matmul(weight, bd)
                         cam_img = cam.reshape(h, w)
                         cam_img = cam_img - torch.min(cam_img)
                         if torch.max(cam_img) != 0:
                             cam_img = cam_img / torch.max(cam_img)
                         cams.append(cam_img)
-                        # if epoch == 0:
-                        #     os.makedirs('/scratch365/aboyd3_new/CYBORG-Iris/cam_visualizations/model_training/',exist_ok=True)
-                        #     cv2.imwrite('/scratch365/aboyd3_new/CYBORG-Iris/cam_visualizations/model_training/' + imageName[ids].replace(".jpg",".png"),cam_img.detach().cpu().numpy()*255)
 
                     cams = torch.stack(cams)
                     hmap_loss = (criterion_hmap(cams,hmap))
@@ -270,7 +265,6 @@ for epoch in range(args.nEpochs):
         json.dump(log, out)
     torch.save(states, os.path.join(log_path,'current_model.pth'))
 
-
 # Plotting of train and test loss
 plt.figure()
 plt.xlabel('Epoch Count')
@@ -279,7 +273,6 @@ plt.plot(np.arange(0, args.nEpochs), train_loss[:], color='r')
 plt.plot(np.arange(0, args.nEpochs), test_loss[:], 'b')
 plt.legend(('Train Loss', 'Validation Loss'), loc='upper right')
 plt.savefig(os.path.join(result_path,'model_Loss.jpg'))
-
 
 # Evaluation of test set utilizing the trained model
 obvResult = evaluation()
